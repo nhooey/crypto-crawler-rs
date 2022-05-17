@@ -58,7 +58,7 @@ pub enum TradeSide {
 }
 
 /// Realtime trade message.
-#[derive(Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize)]
 pub struct TradeMsg {
     /// The exchange name, unique for each exchage
     pub exchange: String,
@@ -93,7 +93,7 @@ pub struct TradeMsg {
 }
 
 /// Level2 orderbook message.
-#[derive(Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize)]
 pub struct OrderBookMsg {
     /// The exchange name, unique for each exchage
     pub exchange: String,
@@ -124,7 +124,7 @@ pub struct OrderBookMsg {
 }
 
 /// Funding rate message.
-#[derive(Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize)]
 pub struct FundingRateMsg {
     /// The exchange name, unique for each exchage
     pub exchange: String,
